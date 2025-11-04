@@ -4,11 +4,11 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
-    "build": "npx nest build",
-    "start": "node dist/main.js",
-    "start:dev": "npx nest start --watch",
-    "start:prod": "node dist/main.js",
-    "format": "prettier --write ."
+   "build": "npx ts-node --transpile-only ./node_modules/@nestjs/cli/bin/nest.js build",
+  "start": "node dist/main.js",
+  "start:dev": "npx nest start --watch",
+  "start:prod": "node dist/main.js",
+  "format": "prettier --write ."
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
